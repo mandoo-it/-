@@ -1,0 +1,21 @@
+def solution(players, callings):
+    answer = []
+    name_dict = {player:i for i, player in enumerate(players)}
+    #meme : 1 
+    idx_dict = {i:player for i, player in enumerate(players)}
+    # 1 : meme
+
+    for item in callings:
+        #item은 사람이름
+        cur = name_dict[item]; # 현재 등수
+        prev = cur - 1; # 이전 등수
+        prev_name = idx_dict[prev]; # 이전 등수 이름
+
+        name_dict[item] = prev;
+        name_dict[prev_name] = cur;
+
+        idx_dict[prev] = item;
+        idx_dict[cur] = prev_name;
+
+
+    return list(idx_dict.values())
