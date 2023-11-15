@@ -1,4 +1,5 @@
 # ALGO
 
-알고리즘을 차근차근히 쌓아가는 공간입니다.
+1일 1알고리즘 진행중 : 
 
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=cutevic95)](https://solved.ac/cutevic95/)
