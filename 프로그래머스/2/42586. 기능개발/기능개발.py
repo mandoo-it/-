@@ -7,7 +7,7 @@ def solution(progresses, speeds):
             arr.append(int(haveTo/speed))
         else :
             arr.append(int(haveTo/speed) + 1) 
-    
+
     cnt = 1
     prev_day = arr[0]
 
